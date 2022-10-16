@@ -13,7 +13,9 @@
 
 int _printf(const char *format, ...)
 {
-    va_list ar;
-    unsigned int i = 0, buffer_pos = 0, count = 0;
+  int (*p_func)(va_list, flags_t *);
+  const char *m;
+  va_list arguments;
+  flags_t flag = {0, 0, 0};
     
 }
