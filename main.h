@@ -17,3 +17,15 @@ typedef struct flags
 	int space;
 	int hash;
 } flags_t;
+
+/**
+ * specifier_handler - struct that chooses a conversion function
+ * depending on the conversion specifier
+ * @specifier: a pointer to the corresponding conversion specifier
+ * @f: format specifier
+ */
+typedef struct specifier_handler
+{
+        int(*specifier)(va_list arg, flags_t *specifier);
+        char f;
+} converter;
