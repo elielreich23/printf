@@ -13,13 +13,10 @@ int _printf(const char *format, ...);
  * @specifier: a pointer to the corresponding converstion specifier
  * @f: format specifier
  */
-typedef struct flags
+typedef struct specifier_handler
 {
-	int hash;
-	int neg;
-	int plus;
-	int space;
-	int zero;
-} flags_t;
+	int(*specifier)(va_list arg, flags_t *specifier);
+	char f;
+} converter;
 
 #endif /* MAIN_H */
