@@ -8,9 +8,9 @@ int _printf(const char *format, ...);
 
 
 /**
- * specifier_handler - struct that chooses a converstion function
- * depending on the converstion specifier
- * @specifier: a pointer to the corresponding converstion specifier
+ * specifier_handler - struct that chooses a conversion function
+ * depending on the conversion specifier
+ * @specifier: a pointer to the corresponding conversion specifier
  * @f: format specifier
  */
 typedef struct specifier_handler
