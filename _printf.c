@@ -1,7 +1,6 @@
 #include <unistd.h>
 #include "main.h"
-#include <stdio.h> 
-
+#include <stdio.h>
 
 /**
  * _printf - function that prints output according to format
