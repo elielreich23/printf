@@ -26,8 +26,8 @@ typedef struct flags
  */
 typedef struct specifier_handler
 {
+	char f;
         int(*specifier)(va_list arg, flags_t *specifier);
-        char f;
 } converter;
 
 /* convert_string */
