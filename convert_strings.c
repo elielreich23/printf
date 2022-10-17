@@ -26,7 +26,7 @@ int (*convert_str(char buf))(va_list, flags_t *)
 		{'u', convert_u},
 		{'x', convert_x},
 		{'X', convert_X},
-		{'%', convert_perct}
+		{'%', convert_perct},
 		{0, NULL}
 	};
 
