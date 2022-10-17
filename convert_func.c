@@ -16,23 +16,23 @@ int print_c(va_list c)
 }
 
 /**
- * print_s - prints a string
+ * print_s - prints string
  * @s: string to print
  *
- * Return: number of chars printed
+ * Return: number of characters printed
  */
 int print_s(va_list s)
 {
-	int count;
+	int counter;
 	char *str = va_arg(s, char *);
 
 	if (str == NULL)
 		str = "(null)";
-	for (count = 0; str[count]; count++)
+	for (counter = 0; str[counter]; counter++)
 	{
-		_putchar(str[count]);
+		_putchar(str[counter]);
 	}
-	return (count);
+	return (counter);
 }
 
 /**
@@ -43,20 +43,20 @@ int print_s(va_list s)
  */
 static int hex_print(char c)
 {
-	int count;
+	int counter;
 	char diff = 'A' - ':';
 	char d[2];
 
 	d[0] = c / 16;
 	d[1] = c % 16;
-	for (count = 0; count < 2; count++)
+	for (counter = 0; counter < 2; counter++)
 	{
-		if (d[count] >= 10)
-			_putchar('0' + diff + d[count]);
+		if (d[counter] >= 10)
+			_putchar('0' + diff + d[counter]);
 		else
-			_putchar('0' + d[count]);
+			_putchar('0' + d[counter]);
 	}
-	return (count);
+	return (counter);
 }
 
 /**
@@ -92,7 +92,7 @@ int print_S(va_list S)
 }
 
 /**
- * print_r - prints astring in reverse
+ * print_r - reverses a string
  * @r: string to print
  *
  * Return: number of chars printed
