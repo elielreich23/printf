@@ -74,7 +74,7 @@ static unsigned long_pow(unsigned bas, unsigned int expo)
 
 /**
  * print_p - prints  address
- * @p: address to print
+ * @p: address to printtofk
  *
  * Return: number of characters to print
  */
