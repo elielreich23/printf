@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * print_u - prints an unsigned in in decimal notation
- * @u: unsigned int to print
+ * print_u - prints an unsigned int in decimal notation
+ * @u: unsigned int to be printed in decimal notation
  *
- * Return: number of digits printed
+ * Return: number of unsigned int printed
  */
 int print_u(va_list u)
 {
 	unsigned int a[10];
-	unsigned int i, m, n, sum;
+	unsigned int i, j, n, sum;
 	int count;
 
 	n = va_arg(u, unsigned int);
-	m = 1000000000; /* (10 ^ 9) */
-	a[0] = n / m;
+	j = 1000000000; /* (10 ^ 9) */
+	a[0] = n / j;
 	for (i = 1; i < 10; i++)
 	{
-		m /= 10;
-		a[i] = (n / m) % 10;
+		j /= 10;
+		a[i] = (n / j) % 10;
 	}
 	for (i = 0, sum = 0, counter = 0; i < 10; i++)
 	{
@@ -34,23 +34,23 @@ int print_u(va_list u)
 
 /**
  * print_o - takes an unsigned int and prints it in octal notation
- * @o: unsigned int to print
+ * @o: unsigned int to be printed in octal notation
  *
- * Return: number of digits printed
+ * Return: number of unsigned int printed
  */
 int print_o(va_list o)
 {
 	unsigned int a[11];
-	unsigned int i, m, n, sum;
+	unsigned int i, j, n, sum;
 	int counter;
 
 	n = va_arg(o, unsigned int);
-	m = 1073741824; /* (8 ^ 10) */
-	a[0] = n / m;
+	j = 1073741824; /* (8 ^ 10) */
+	a[0] = n / j;
 	for (i = 1; i < 11; i++)
 	{
-		m /= 8;
-		a[i] = (n / m) % 8;
+		j /= 8;
+		a[i] = (n / j) % 8;
 	}
 	for (i = 0, sum = 0, counter = 0; i < 11; i++)
 	{
@@ -66,23 +66,23 @@ int print_o(va_list o)
 
 /**
  * print_b - takes an unsigned int and prints it in binary notation
- * @b: unsigned in to print
+ * @b: unsigned int to be printed in binary notation
  *
- * Return: number of digits printed
+ * Return: number of unsigned int printed
  */
 int print_b(va_list b)
 {
-	unsigned int n, m, i, sum;
+	unsigned int n, j, i, sum;
 	unsigned int a[32];
 	int counter;
 
 	n = va_arg(b, unsigned int);
-	m = 2147483648; /* (2 ^ 31) */
-	a[0] = n / m;
+	j = 2147483648; /* (2 ^ 31) */
+	a[0] = n / j;
 	for (i = 1; i < 32; i++)
 	{
-		m /= 2;
-		a[i] = (n / m) % 2;
+		j /= 2;
+		a[i] = (n / j) % 2;
 	}
 	for (i = 0, sum = 0, counter = 0; i < 32; i++)
 	{
