@@ -11,7 +11,7 @@
  * pointer to function if a conversion specifier matches
  */
 
-unsigned int (*convert_str(char buf))(va_list, flags_t *)
+int (*convert_str(char buf))(va_list, flags_t *)
 {
 	converter c_func[] = {
 		{'b', convert_b},

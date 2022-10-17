@@ -29,3 +29,10 @@ typedef struct specifier_handler
         int(*specifier)(va_list arg, flags_t *specifier);
         char f;
 } converter;
+
+/* convert_string */
+int (*convert_str(char buf))(va_list, flags_t *);
+
+/* flags */
+int get_flag(char s, flags_t *f);
+
