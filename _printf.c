@@ -11,19 +11,19 @@ static int (*check_for_specifiers(const char *format))(va_list)
 {
 	unsigned int i;
 	print_t p[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"i", print_i},
-		{"d", print_d},
-		{"u", print_u},
 		{"b", print_b},
+		{"c", print_c},
+		{"d", print_d},
+		{"i", print_i},
 		{"o", print_o},
-		{"x", print_x},
-		{"X", print_X},
 		{"p", print_p},
-		{"S", print_S},
 		{"r", print_r},
 		{"R", print_R},
+		{"s", print_s},
+		{"S", print_S},
+		{"u", print_u},
+		{"x", print_x},
+		{"X", print_X},
 		{NULL, NULL}
 	};
 
