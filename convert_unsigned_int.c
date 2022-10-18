@@ -10,7 +10,7 @@ int print_u(va_list u)
 {
 	unsigned int a[10];
 	unsigned int i, j, n, sum;
-	int count;
+	int counter;
 
 	n = va_arg(u, unsigned int);
 	j = 1000000000; /* (10 ^ 9) */
