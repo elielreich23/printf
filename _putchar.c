@@ -2,7 +2,6 @@
 
 /**
 * _putchar - function to print
-* @c: chararter to print
 * return: 1 if succeful and -1 if not
 */
 
