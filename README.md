@@ -21,3 +21,25 @@ You don’t have to reproduce the buffer handling of the C library printf functi
 <li>You don’t have to handle field width</li>
 <li>You don’t have to handle precision</li>
 <li>You don’t have to handle the length modifiers</li>
+</ul>
+<h4>Task 1</h4>
+<p>Handle the following conversion specifiers:</p>
+<ul>
+<li>d</li>
+<li>i</li>
+<li>You don’t have to handle the flag characters</li>
+<li>You don’t have to handle field width</li>
+<li>You don’t have to handle precision</li>
+<li>You don’t have to handle the length modifiers</li>
+</ul>
+
+
+
+
+
+
+
+
+<h4>Collaborators:</h4>
+<h6>Eliel Douna</h6>
+<h6>Clement Clement</h6>
