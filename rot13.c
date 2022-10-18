@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_R - prints  string in rot13
+ * print_R - prints a string in rot13
  * @R: string to print
  *
  * Return: number of chars printed
@@ -22,7 +22,7 @@ int print_R(va_list R)
 	{
 		for (b = 0; in[b]; b++)
 		{
-			if (in[j] == str[a])
+			if (in[b] == str[a])
 			{
 				_putchar(out[b]);
 				count++;
