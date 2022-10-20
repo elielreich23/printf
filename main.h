@@ -19,13 +19,6 @@ typedef struct flag_s
 	unsigned char value;
 } flag_t;
 
-int handle_width(va_list args, const char *modifier, char *index);
-int handle_precision(va_list args, const char *modifier, char *index);
-unsigned char handle_flags(const char *flag, char *index);
-unsigned char handle_flags(const char *flag, char *index);
-unsigned char handle_length(const char *modifier, char *index);
-int handle_width(va_list args, const char *modifier, char *index);
-int handle_precision(va_list args, const char *modifier, char *index);
 
 int _putchar(char c);
 int _printf(const char *format, ...);
@@ -44,4 +37,3 @@ int print_r(va_list r);
 int print_R(va_list R);
 
 #endif  /* _MAIN_H */
-
